@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane alignment="center" hgap="10" style="-fx-background-color: ABD8;" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Label fx:id="label1" text="AES 128" GridPane.rowIndex="1">
+         <font>
+            <Font name="Sylfaen" size="18.0" />
+         </font></Label>
+      <Button fx:id="gnereteButton" mnemonicParsing="false" onAction="#genereteNewKey" prefHeight="25.0" prefWidth="66.0" text="Generate" />
+        <TextField fx:id="textfield" prefHeight="25.0" prefWidth="195.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <GridPane alignment="BOTTOM_CENTER" minWidth="400.0" prefHeight="75.0" prefWidth="419.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+              <Button fx:id="button2" mnemonicParsing="false" onAction="#handle2" prefHeight="25.0" prefWidth="110.0" text="Decrypt" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+              <Button fx:id="button1" mnemonicParsing="false" onAction="#handle1" prefHeight="25.0" prefWidth="110.0" text="Encrypt File" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+              <Button fx:id="button4" mnemonicParsing="false" onAction="#handle4" prefHeight="25.0" prefWidth="110.0" text="Use Key" GridPane.halignment="CENTER" />
+              <Button fx:id="button3" mnemonicParsing="false" onAction="#handle3" prefHeight="25.0" prefWidth="110.0" text="Save Key" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+         </children>
+      </GridPane>
+      <Label fx:id="label2">
+         <font>
+            <Font name="Sylfaen" size="14.0" />
+         </font></Label>
+    </children>
+   <padding>
+      <Insets bottom="-10.0" top="25.0" />
+   </padding>
+   
+
+
+</FlowPane>
